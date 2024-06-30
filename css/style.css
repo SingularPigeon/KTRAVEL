@@ -1,0 +1,919 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #191919;
+    border-style: none;
+}
+
+/* Estilos generales */
+@font-face {
+    font-family: 'Kanit-Light';
+    src: url('../Kanit/Kanit-Light.ttf')
+}
+
+@font-face {
+    font-family: 'Kanit-Medium';
+    src: url('../Kanit/Kanit-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'Kanit-Bold';
+    src: url('../Kanit/Kanit-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Kanit-Regular';
+    src: url('../Kanit/Kanit-Regular.ttf')
+}
+
+
+@font-face {
+    font-family: 'Kanit-Semibold';
+    src: url('../Kanit/Kanit-SemiBold.ttf')
+}
+
+body {
+    font-family: 'Kanit-Light';
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Kanit-Regular';
+    font-size: 36px;
+    color: #191919;
+    letter-spacing: 0.3px;
+
+}
+
+h2 {
+    font-family: 'Kanit-Regular';
+    font-size: 32px;
+    color: #191919;
+    letter-spacing: 0.3px;
+    padding: 10px 10px;
+}
+
+h3 {
+    font-family: 'Kanit-Regular';
+    font-size: 24px;
+    color: #191919;
+    letter-spacing: 0.3px;
+
+}
+
+h4 {
+    font-family: 'Kanit-Regular';
+    font-size: 20px;
+    color: #191919;
+    letter-spacing: 0.3px;
+
+}
+
+p {
+    font-family: 'Kanit-Light';
+    font-size: 15px;
+
+}
+
+em {
+    font-family: 'Kanit-Regular';
+    font-style: normal;
+}
+
+/* Estilos barra navegación */
+
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    background-color: #c69cc814;
+    height: 100px;
+}
+
+.logo_nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+.logo_nav img {
+    width: 120px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.barra_nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 30px;
+
+}
+
+.fondo_nav {
+    display: flex;
+    justify-content: flex-start;
+    height: 70px;
+    position: relative;
+    top: 18px;
+    border-radius: 20px 0 0 0;
+    background-color: #c69cc83e;
+    padding-left: 15px;
+
+}
+
+.barra_nav_2 {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 30px;
+
+}
+
+.nav_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+
+}
+
+.nav_link2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 20px;
+
+}
+
+.nav_link_icon {
+    padding-bottom: 15px;
+
+}
+
+.barra_nav a,
+.barra_nav_2 a {
+
+    font-size: 15px;
+
+}
+
+.barra_nav a:hover {
+    color: #C69CC8;
+
+}
+
+
+/* Estilos formulario */
+
+.planificacion_escritorio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.planificacion img {
+    width: 100%;
+
+}
+
+.container_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+
+.container_2 h1 {
+    color: #fff;
+    text-shadow: 3px 4px 6px #1919197a;
+    letter-spacing: 0.3px;
+}
+
+.formulario_busqueda {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 50px;
+    gap: 10px;
+    align-items: flex-start;
+    background-color: #eee2eec7;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px #1919197a;
+
+}
+
+.form_info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formulario_busqueda label {
+    font-family: 'Kanit-Light';
+    font-size: 16px;
+
+}
+
+.formulario_busqueda input[type="text"] {
+    padding: 8px 25px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.formulario_busqueda input[type="date"] {
+    padding: 7px 25px;
+    margin-bottom: 20px;
+    border-style: none;
+    border-radius: 5px;
+
+}
+
+.formulario_busqueda input[type="number"] {
+    padding: 8px 25px;
+    border-style: none;
+    border-radius: 5px;
+
+}
+
+.btn_buscar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+
+}
+
+.btn_buscar button {
+
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #D850BF;
+    font-family: 'Kanit-Regular';
+    font-size: 16px;
+    color: #fffafa;
+
+}
+
+.btn_buscar button i {
+    padding-right: 5px;
+}
+
+.btn_buscar button:hover {
+    background-color: #a2208a;
+
+}
+
+
+/* Sección Paquetes de viaje */
+
+.paquete_titulo_escritorio {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+
+.paquete_escritorio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 40px;
+    gap: 20px;
+
+}
+
+.paquete_card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fffafa;
+    box-shadow: 5px 5px 8px #c4c3c353;
+
+
+}
+
+.paquete_card_header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 220px;
+}
+
+.paquete_card_header img {
+    width: 100%;
+
+}
+
+.paquete_card_body {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 15px;
+
+}
+
+.paquete_precio {
+    position: relative;
+    bottom: 33.5px;
+    color: #f1f1f1;
+    background-color: #D850BF;
+    padding: 5px 12px;
+    border-radius: 0 6px 0 0;
+    font-family: 'Kanit-Medium';
+}
+
+
+.paquete_card_body_titulo {
+    padding: 0 5px;
+    font-family: 'Kanit-Semibold';
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.paquete_card_detalle {
+    font-size: 14px;
+    line-height: 18px;
+    word-break: break-word;
+    overflow: hidden;
+    height: 110px;
+    padding: 0 5px;
+    margin: 8px 0 0;
+}
+
+.paquete_card_ubicacion {
+    border-top: solid #ddd;
+    padding-top: 10px;
+}
+
+.paquete_card_footer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0 20px 0;
+
+}
+
+.btn_paquete_card_1 button {
+
+    background-color: #fffafa;
+    border-radius: 18px;
+    border: solid 2px;
+    border-color: #D850BF;
+    padding: 5px 15px;
+    margin-right: 18px;
+    color: #D850BF;
+    font-family: 'Kanit-Regular';
+    font-size: 14px;
+
+
+}
+
+.btn_paquete_card_1 button:hover {
+
+    background-color: #D850BF;
+    color: #fff7f7;
+
+}
+
+.btn_paquete_card_2 button {
+
+    background-color: #D850BF;
+    border-radius: 18px;
+    padding: 7px 20px;
+    color: #fff7f7;
+    font-family: 'Kanit-regular';
+    font-size: 14px;
+
+}
+
+.btn_paquete_card_2 button:hover {
+    background-color: #a4258d;
+    color: #fff7f7;
+
+}
+
+/* Sección asistente */
+.container_asistente {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.asistente {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 120px;
+    border-radius: 20px;
+    background: #fffafa;
+    box-shadow: 5px 5px 8px #c4c3c353;
+}
+
+.asistente_1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.asistente_1 img {
+    width: 12%;
+
+}
+
+.asistente_items_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0 20px;
+}
+
+
+
+
+.asistente_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.asistente_2 button {
+    background-color: #D850BF;
+    border-radius: 18px;
+    padding: 7px 25px;
+    color: #fff7f7;
+    font-family: 'Kanit-regular';
+    font-size: 16px;
+
+}
+
+.asistente_2 button:hover {
+    background-color: #a4258d;
+    color: #fff7f7;
+}
+
+/* Sección opiniones de usuarios y blog*/
+
+.opinion_blog_titulo {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+
+}
+
+.opinion_blog {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+    padding: 20px 5px;
+
+}
+
+.opinion_card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fffafa;
+    box-shadow: 5px 5px 8px #c4c3c353;
+
+}
+
+.opinion_card_header p {
+    padding-left: 20px;
+}
+
+.opinion_card_body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.opinion_card_body_titulo {
+    padding: 0 5px;
+    font-family: 'Kanit-Semibold';
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.opinion_card_detalle {
+    font-size: 14px;
+    line-height: 18px;
+    word-break: break-word;
+    overflow: hidden;
+    height: 110px;
+    padding: 0 5px;
+    margin: 8px 0 0;
+
+}
+
+.opinion_card_paquete img {
+    width: 20px;
+}
+
+.opinion_card_footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 0 20px 0;
+    border-top: solid #ddd;
+    padding: 10px;
+
+}
+
+.opinion_footer_icon {
+    padding-right: 10px;
+}
+
+/* Sección blog */
+
+.blog_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fffafa;
+    box-shadow: 5px 5px 8px #c4c3c353;
+}
+
+.blog_card_header h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 30px 0 10px 20px;
+
+}
+
+.blog_card_header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 250px;
+    overflow: hidden;
+
+
+}
+
+.img_blog {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: 15px;
+}
+
+.blog_card_body_titulo {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.blog_card_detalle {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.blog_card_footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+/* Sección Condiciones */
+
+.condiciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.condiciones_titulo {
+    display: flex;
+    justify-content: center;
+    padding: 60px 10px 20px 10px;
+}
+
+.condiciones_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fffafa;
+    box-shadow: 5px 5px 8px #c4c3c353;
+    padding: 50px;
+
+}
+
+.condiciones_card_header {
+    font-family: 'Kanit-Semibold';
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.condiciones_card_body p {
+    text-align: left;
+    letter-spacing: 0.2px;
+
+}
+
+.condiciones_card_body a {
+    font-family: 'Kanit-Regular';
+    color: #a4258d;
+
+}
+
+/* Página  presupuesto */
+
+/* Sección detalle paquete */
+
+.detalle_paquete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+
+.detalle_paquete_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C69CC8;
+    padding: 10px 0 15px 0;
+
+}
+
+.detalle_paquete_header h2 {
+    color: #fff;
+    letter-spacing: 0.3px;
+}
+
+
+.card_viaje {
+    position: relative;
+    bottom: 143px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fffafa;
+    box-shadow: 5px 5px 8px #c4c3c353;
+
+}
+
+.detalle_paquete_body {
+    padding: 40px;
+}
+
+/* Seccion aside resumen viaje */
+
+aside {
+    position: relative;
+    bottom: 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fffafa;
+    box-shadow: 5px 5px 8px #c4c3c353;
+
+}
+
+/* Aside 1 */
+
+.aside_1 {
+
+    height: 450px;
+    padding-bottom: 50px;
+}
+
+.resumen_viaje_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D850BF;
+    padding: 10px 0 15px 0;
+
+}
+
+.resumen_precio1 {
+    font-family: 'Kanit-Regular';
+    font-size: 30px;
+    color: #fff;
+
+
+}
+
+.resumen_precio2 {
+    font-family: 'Kanit-Regular';
+    font-size: 15px;
+}
+
+.resumen_card_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+
+}
+
+.resumen_item {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.resumen_item i {
+    padding-right: 10px;
+
+}
+
+.btn_resumen_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn_resumen_card button {
+    background-color: #D850BF;
+    border-radius: 18px;
+    padding: 7px 60px;
+    color: #fff7f7;
+    font-family: 'Kanit-regular';
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+
+.btn_resumen_card button:hover {
+    background-color: #a2208a;
+}
+
+/* Aside 2 */
+
+.aside_2 {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    border-top: solid 2px #c69cc88c;
+}
+
+.titulo_asistente_aside {
+    font-family: 'Kanit-Regular';
+    font-size: 30px;
+    padding: 20px;
+
+}
+
+.contacto_aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Kanit-Regular';
+    font-size: 25px;
+
+}
+
+.asistente_aside_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit-Light';
+    font-size: 16px;
+    padding-top: 20px;
+
+}
+
+
+/* Seccion footer */
+
+.footer_up {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    height: 250px;
+    background-color: #f2f4f5;
+    padding: 50px;
+
+}
+
+.logo_footer {
+    display: flex;
+    padding-right: 50px;
+
+}
+
+.logo_footer img {
+    width: 120px;
+
+}
+
+.footer_1 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+
+}
+
+.footer_2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+
+}
+
+.footer_2 a:hover {
+    color: #C69CC8;
+}
+
+.footer_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 50px;
+
+}
+
+.footer_1 h4,
+.footer_2 h4,
+.footer_3 h4 {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.footer_3 i {
+    padding: 10px;
+
+}
+
+.footer_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #f2f4f5;
+    padding-top: 50px;
+
+}
+
+.policy_box,
+.legal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    ;
+}
+
+.policy_box a {
+    font-family: 'Kanit-Regular';
+    font-size: 16px;
+    padding: 0 5px;
+}

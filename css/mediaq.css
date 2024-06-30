@@ -1,0 +1,518 @@
+/* Valores escritorio */
+@media (min-width:1110px) and (max-width:1920px) {
+
+    .planificacion_tablet,
+    .paquete_titulo_tablet,
+    .paquete_tablet,
+    .nav_tablet,
+    .asistente_movil,
+    .paquete_movil,
+    .condiciones_tablet,
+    .condiciones_titulo_tablet, footer.footer_up_movil,
+    footer.footer_bottom_movil,.condiciones_titulo_tablet,.detalle_paquete_movil {
+        display: none;
+    }
+}
+
+/* Valores tablet */
+@media (min-width:900px) and (max-width:1109px) {
+
+    .planificacion_escritorio,
+    .paquete_titulo_escritorio,
+    .paquete_escritorio,
+    .nav_tablet,
+    .paquete_movil,
+    .blog_card,.condiciones_titulo,
+    .condiciones,.asistente_movil,
+    footer.footer_up_movil,
+    footer.footer_bottom_movil,.detalle_paquete_movil {
+        display: none;
+    }
+
+    .barra_nav a,
+    .barra_nav_2 a {
+        font-size: 12px;
+
+    }
+
+    .planificacion_tablet {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .planificacion_tablet img {
+        width: 100%;
+    }
+
+    .container_2_tablet {
+        position: absolute;
+        top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container_2_tablet h1 {
+        color: #fff;
+        text-shadow: 3px 4px 6px #1919197a;
+        letter-spacing: 0.3px;
+    }
+
+    .formulario_busqueda_tablet {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 50px;
+        width: 800px;
+        gap: 10px;
+        align-items: flex-start;
+        background-color: #eee2eec7;
+        border-radius: 20px;
+        box-shadow: 3px 3px 6px #1919197a;
+
+    }
+
+    .form_info_tablet {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .formulario_busqueda_tablet label {
+        font-family: 'Kanit-Light';
+        font-size: 16px;
+
+    }
+
+    .formulario_busqueda_tablet input[type="text"] {
+        padding: 8px 35px;
+        border-style: none;
+        border-radius: 5px;
+    }
+
+    .formulario_busqueda_tablet input[type="date"] {
+        padding: 7px 25px;
+        margin-bottom: 20px;
+        border-style: none;
+        border-radius: 5px;
+
+    }
+
+    .formulario_busqueda_tablet input[type="number"] {
+        padding: 8px 25px;
+        border-style: none;
+        border-radius: 5px;
+
+    }
+
+    .btn_buscar_tablet {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+
+    }
+
+    .btn_buscar_tablet button {
+
+        padding: 10px 30px;
+        border-radius: 20px;
+        background-color: #D850BF;
+        font-family: 'Kanit-Regular';
+        font-size: 16px;
+        color: #fffafa;
+
+    }
+
+    .btn_buscar_tablet button i {
+        padding-right: 5px;
+    }
+
+    .btn_buscar_tablet button:hover {
+        background-color: #a2208a;
+
+    }
+
+    .paquete_tablet,
+    .paquete_titulo_tablet,
+    .container_asistente,
+    .opinion_blog_titulo,
+    .opinion_blog,
+    .condiciones_titulo,
+    .condiciones,
+    .asistente_movil,footer.footer_up,
+    footer.footer_bottom{
+        position: relative;
+        top:400px;
+        
+    }
+
+    .paquete_tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 40px;
+        gap: 20px;
+    }
+
+    .paquete_titulo_tablet {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    /* Condiciones */
+    .condiciones_titulo_tablet{
+        position: relative;
+        top:400px;
+        display: flex;
+      justify-content: center;
+       
+    }
+    .condiciones_tablet {
+        position: relative;
+        top:400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+@media (min-width:512px) and (max-width:899px) {
+
+    .planificacion_escritorio,
+    .paquete_titulo_escritorio,
+    .paquete_escritorio,
+    .paquete_tablet,
+    .paquete_titulo_tablet,
+    .barra_nav,
+    .condiciones,
+    .condiciones_titulo,
+    .nav,
+    .blog_card,
+    .opinion_blog,
+    .opinion_blog_titulo,
+    .container_asistente,
+    .condiciones_titulo,
+    .condiciones,
+    .condiciones_tablet,
+    .condiciones_titulo_tablet,footer.footer_up,
+    footer.footer_bottom,.detalle_paquete {
+        display: none;
+    }
+
+    .logo_nav {
+        padding: 20px;
+    }
+
+    .nav_tablet {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 50px;
+    }
+
+    .planificacion_tablet {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .planificacion_tablet img {
+        width: 100%;
+    }
+
+    .container_2_tablet {
+        position: absolute;
+        top: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container_2_tablet h1 {
+        color: #fff;
+        text-shadow: 3px 4px 6px #1919197a;
+        letter-spacing: 0.3px;
+    }
+
+    .formulario_busqueda_tablet {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 50px;
+        width: 500px;
+        gap: 10px;
+        align-items: flex-start;
+        background-color: #eee2eec7;
+        border-radius: 20px;
+        box-shadow: 3px 3px 6px #1919197a;
+
+    }
+
+    .form_info_tablet {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .formulario_busqueda_tablet label {
+        font-family: 'Kanit-Light';
+        font-size: 16px;
+
+    }
+
+    .formulario_busqueda_tablet input[type="text"] {
+        padding: 8px 35px;
+        border-style: none;
+        border-radius: 5px;
+    }
+
+    .formulario_busqueda_tablet input[type="date"] {
+        padding: 7px 25px;
+        margin-bottom: 20px;
+        border-style: none;
+        border-radius: 5px;
+
+    }
+
+    .formulario_busqueda_tablet input[type="number"] {
+        padding: 8px 25px;
+        border-style: none;
+        border-radius: 5px;
+
+    }
+
+    .btn_buscar_tablet {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+
+    }
+
+    .btn_buscar_tablet button {
+
+        padding: 10px 30px;
+        border-radius: 20px;
+        background-color: #D850BF;
+        font-family: 'Kanit-Regular';
+        font-size: 16px;
+        color: #fffafa;
+
+    }
+
+    .btn_buscar_tablet button i {
+        padding-right: 5px;
+    }
+
+    .btn_buscar_tablet button:hover {
+        background-color: #a2208a;
+
+    }
+
+    .paquete_movil {
+        position: relative;
+        top: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+
+    }
+
+    .paquete_card {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        overflow: hidden;
+        border-radius: 15px;
+        background: #fffafa;
+        box-shadow: 5px 5px 8px #c4c3c353;
+        margin-bottom: 20px;
+    }
+
+    /*Sección asistente */
+    .asistente_movil {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    }
+
+    .asistente {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        top: 400px;
+        height: 120px;
+        border-radius: 20px;
+        background: #fffafa;
+        box-shadow: 5px 5px 8px #c4c3c353;
+    }
+
+    .asistente_1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+        padding: 30px;
+
+    }
+
+    .asistente_1 img {
+        width: 40%;
+
+    }
+
+    .asistente_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .asistente_2 button {
+        background-color: #D850BF;
+        border-radius: 18px;
+        padding: 7px 25px;
+        color: #fff7f7;
+        font-family: 'Kanit-regular';
+        font-size: 16px;
+
+    }
+
+    .asistente_2 button:hover {
+        background-color: #a4258d;
+        color: #fff7f7;
+    }
+
+    /* Pagina presupuesto */
+
+    .detalle_paquete_movil {
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+       
+    }
+
+    .card_viaje {
+        position: relative;
+        bottom: 93px;
+    }
+
+    .resumen_viaje_movil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 700px;
+        height: 800px;
+        overflow: hidden;
+        border-radius: 15px;
+        background: #fffafa;
+        box-shadow: 5px 5px 8px #c4c3c353;
+    }
+
+
+
+    /* Sección footer movil */
+    .footer_up_movil {
+        position: relative;
+        top: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        height: 150px;
+        background-color: #f2f4f5;
+        padding: 50px;
+    }
+
+}
+
+.logo_footer {
+    display: flex;
+    padding-right: 50px;
+
+}
+
+.logo_footer img {
+    width: 120px;
+
+}
+
+.footer_1 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+
+}
+
+.footer_2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+
+}
+
+.footer_2 a:hover {
+    color: #C69CC8;
+}
+
+.footer_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 50px;
+
+}
+
+.footer_1 h4,
+.footer_2 h4,
+.footer_3 h4 {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.footer_3 i {
+    padding: 5px;
+
+}
+
+.footer_bottom_movil {
+    position: relative;
+    top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #f2f4f5;
+    padding-top: 50px;
+
+}
+
+.policy_box,
+.legal,.legal_movil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+.policy_box a {
+    font-family: 'Kanit-Regular';
+    font-size: 16px;
+    padding: 0 5px;
+}
+

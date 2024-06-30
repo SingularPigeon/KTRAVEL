@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/mediaq.css">
+</head>
+
+<body>
+    <!-- Inicio de la cabecera -->
+    <header>
+        <!-- logo -->
+        <div class="logo_nav col-3">
+            <a href="index.html">
+                <img src="assets/img/logo K-TRAVEL.png" alt="Logo Agencia">
+            </a>
+        </div>
+        <!-- Barra navegación  escritorio-->
+        <div class="nav col-12">
+            <div class="barra_nav col-8">
+                <div class="nav_link">
+                    <i class="fa-regular fa-paper-plane fa-xl nav_link_icon" style="color: #d850bf;"></i>
+                    <a href="Vuelos.html">Vuelos</a>
+                </div>
+                <div class="nav_link">
+                    <i class="fa-solid fa-bed fa-xl nav_link_icon nav_link_icon" style="color: #d850bf;"></i>
+                    <a href="alojamiento.html">Alojamiento</a>
+                </div>
+                <div class="nav_link">
+                    <i class="fa-solid fa-ticket fa-xl nav_link_icon" style="color: #D850BF;"></i>
+                    <a href="actividades.html">Actividades</a>
+                </div>
+                <div class="nav_link">
+                    <i class="fa-solid fa-book-bookmark fa-xl nav_link_icon" style="color: #d850bf;"></i>
+                    <a href="guia.html">Guía de Corea</a>
+                </div>
+                <div class="nav_link">
+                    <i class="fa-solid fa-suitcase fa-xl nav_link_icon" style="color: #d850bf;"></i>
+                    <a href="paquetes.html">Paquetes</a>
+                </div>
+            </div>
+
+            <div class="fondo_nav col-4">
+                <div class="barra_nav_2">
+                    <div class="nav_link2">
+                        <i class="fa-solid fa-basket-shopping fa-xl nav_link_icon" style="color: #d850bf;"></i>
+                        <a href="mi_cuenta.html">Mi cuenta</a>
+                    </div>
+                    <div class="nav_link2">
+                        <i class="fa-regular fa-user fa-xl nav_link_icon" style="color: #d850bf;">
+                        </i>
+                        <a href="iniciar_sesion.html">Iniciar sesión</a>
+                    </div>
+                </div>
+            </div>
+       
+        </div><!--.nav-->
+        <!-- Barra  navvegacion tablet/Movil -->
+
+        <div class="nav_tablet col-12">
+            <a href="#"><a href="#">
+                    <i class="fa-solid fa-bars fa-lg" style="color: #d850bf;"></i>
+                </a>
+        </div><!--.nav_tablet-->
+    </header>
+
+    <!-- Esta  sección corresponde al formulario de planificación de viajes titulo/formulario/origen-destino/fecha idea-vuelta/cantidad de persona/boton buscar-->
+
+    <article class="planificacion_escritorio">
+
+        <img src="assets/img/Banner1.png"></a>
+        <div class="container_2 col-12">
+            <h1>¡Corea del Sur te espera!</h1>
+
+            <form action="resultados.html" class="formulario_busqueda">
+                <div class="form_info col-2">
+                    <label for="start">Origen</label>
+                    <input type="text" name="start" placeholder="Ingresa tu origen" required>
+                </div>
+                <div class="form_info col-2">
+                    <label for="finish">Destino</label>
+                    <input type="text" name="finish" placeholder="Ingresa tu destino" required>
+                </div>
+                <!-- Seleccion de fecha  del viaje -->
+                <div class="form_info col-2">
+                    <label for="start-date">Salida</label>
+                    <input type="date" name="travel-date" id="travel-date" required>
+                </div>
+                <div class="form_info col-2">
+                    <label for="end-date">Retorno</label>
+                    <input type="date" name="travel-date" id="travel-date" required>
+                </div>
+                <!-- Selección de cantidad de personas -->
+                <div class="form_info col-2">
+                    <label for="num-people">Nº de personas</label>
+                    <input type="number" name="num-people" id="num-people" min="1" max="10" value="1" required>
+                </div>
+                <!-- Botón para simular flujo -->
+                <div class="btn_buscar col-2">
+                    <button><i class="fa-solid fa-magnifying-glass" style="color: #fafafa;"></i> Buscar</button>
+                </div>
+            </form>
+        </div>
+    </article><!--.planificacionn_escritorio-->
+
+
+    <!-- Tablet -->
+    <article class="planificacion_tablet">
+
+        <img src="assets/img/Banner1.png"></a>
+        <div class="container_2_tablet col-12">
+            <h1>¡Corea del Sur te espera!</h1>
+
+            <form action="resultados.html" class="formulario_busqueda_tablet">
+                <div class="form_info_tablet col-12">
+                    <label for="start">Origen</label>
+                    <input type="text" name="start" placeholder="Ingresa tu origen" required>
+                </div>
+                <div class="form_info_tablet col-12">
+                    <label for="finish">Destino</label>
+                    <input type="text" name="finish" placeholder="Ingresa tu destino" required>
+                </div>
+                <!-- Seleccion de fecha  del viaje -->
+                <div class="form_info_tablet col-12">
+                    <label for="start-date">Salida</label>
+                    <input type="date" name="travel-date" id="travel-date" required>
+                </div>
+                <div class="form_info_tablet col-12">
+                    <label for="end-date">Retorno</label>
+                    <input type="date" name="travel-date" id="travel-date" required>
+                </div>
+                <!-- Selección de cantidad de personas -->
+                <div class="form_info_tablet col-12">
+                    <label for="num-people">Nº de personas</label>
+                    <input type="number" name="num-people" id="num-people" min="1" max="10" value="1" required>
+                </div>
+                <!-- Botón para simular flujo -->
+                <div class="btn_buscar_tablet col-12">
+                    <button><i class="fa-solid fa-magnifying-glass" style="color: #fafafa;"></i> Buscar</button>
+                </div>
+            </form>
+        </div>
+    </article><!--.planificacion_tablett-->
+
+    <!-- Esta  sección corresponde a cards con paquetes de viaje -->
+
+    <div class="paquete_titulo_escritorio col-12">
+        <h2> Ideas para conocer Corea</h2>
+    </div><!--paquete_titulo_escritorio-->
+    <article class="paquete_escritorio">
+        <!-- Tarjeta paquete 1-->
+        <section class="paquete_card col-3">
+            <a href="info_ruta_gamer.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_1.png" alt="Pc Bang">
+                    <span class="paquete_precio">$ 2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta K-gamer grupal</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,9 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+
+        <!-- Tarjeta paquete 2-->
+        <section class="paquete_card col-3">
+            <a href="info_ruta_mercados.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_2.png" alt="Pc Bang">
+                    <span class="paquete_precio">$ 2.670.850</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta Mercados</h3>
+                        </span>
+                        <span>
+                            <h3>Busan, 15 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        Mercado Gukje, Jagalchi, Haeundae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+
+        <!-- Tarjeta paquete 3-->
+        <section class="paquete_card col-3">
+            <a href="info_ruta_rural.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_3.png" alt="Pc Bang">
+                    <span class="paquete_precio">$2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta Corea Rural</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,9 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+
+        <!-- Tarjeta paquete 4-->
+        <section class="paquete_card col-3">
+            <a href="info_ruta_tren.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_4.png" alt="Pc Bang">
+                    <span class="paquete_precio">$2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta Corea en tren</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,10 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+    </article><!--paquete_escritorio-->
+
+
+    <!-- Esta  sección corresponde a cards con paquetes de viaje -->
+
+    <!-- Tablet -->
+    <div class="paquete_titulo_tablet col-12">
+        <h2> Ideas para conocer Corea</h2>
+    </div><!--.paquete_titulo_tablet-->
+    <article class="paquete_tablet">
+        <!-- Tarjeta paquete 6-->
+        <section class="paquete_card col-4">
+            <a href="info_ruta_gamer.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_1.png" alt="Pc Bang">
+                    <span class="paquete_precio">$ 2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body_">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta K-gamer grupal</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,9 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+        <section class="paquete_card col-4">
+            <a href="info_ruta_gamer.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_1.png" alt="Pc Bang">
+                    <span class="paquete_precio">$ 2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body_">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta K-gamer grupal</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,9 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+        <section class="paquete_card col-4">
+            <a href="info_ruta_gamer.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_1.png" alt="Pc Bang">
+                    <span class="paquete_precio">$ 2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body_">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta K-gamer grupal</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,9 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+    </article><!--paquete_tablet-->
+
+    <!-- Escritorio -->
+    <article class="paquete_escritorio">
+        <!-- Tarjeta paquete 6-->
+        <section class="paquete_card col-3">
+            <a href="info_ruta_gamer.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_1.png" alt="Pc Bang">
+                    <span class="paquete_precio">$ 2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta K-gamer grupal</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,9 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+
+        <!-- Tarjeta paquete 6-->
+        <section class="paquete_card col-3">
+            <a href="info_ruta_mercados.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_2.png" alt="Pc Bang">
+                    <span class="paquete_precio">$ 2.670.850</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta Mercados</h3>
+                        </span>
+                        <span>
+                            <h3>Busan, 15 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        Mercado Gukje, Jagalchi, Haeundae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+
+        <!-- Tarjeta paquete 7-->
+        <section class="paquete_card col-3">
+            <a href="info_ruta_rural.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_3.png" alt="Pc Bang">
+                    <span class="paquete_precio">$2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta Corea Rural</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,9 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+
+        <!-- Tarjeta paquete 8-->
+        <section class="paquete_card col-3">
+            <a href="info_ruta_tren.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_4.png" alt="Pc Bang">
+                    <span class="paquete_precio">$2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta Corea en tren</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,10 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+    </article><!--paquete_escritorio-->
+
+    <!-- Movil -->
+    <article class="paquete_movil">
+        <!-- Tarjeta paquete 6-->
+        <section class="paquete_card col-18">
+            <a href="info_ruta_gamer.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_1.png" alt="Pc Bang">
+                    <span class="paquete_precio">$ 2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta K-gamer grupal</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,9 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+
+        <!-- Tarjeta paquete 6-->
+        <section class="paquete_card col-12">
+            <a href="info_ruta_mercados.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_2.png" alt="Pc Bang">
+                    <span class="paquete_precio">$ 2.670.850</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta Mercados</h3>
+                        </span>
+                        <span>
+                            <h3>Busan, 15 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        Mercado Gukje, Jagalchi, Haeundae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+
+        <!-- Tarjeta paquete 7-->
+        <section class="paquete_card col-12">
+            <a href="info_ruta_rural.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_3.png" alt="Pc Bang">
+                    <span class="paquete_precio">$2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta Corea Rural</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,9 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+
+        <!-- Tarjeta paquete 8-->
+        <section class="paquete_card col-12">
+            <a href="info_ruta_tren.html">
+                <!-- Header tarjeta paquete -->
+                <div class="paquete_card_header">
+                    <img src="assets/img/paquete_4.png" alt="Pc Bang">
+                    <span class="paquete_precio">$2.546.527</span>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="paquete_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <h3>Ruta Corea en tren</h3>
+                        </span>
+                        <span>
+                            <h3>Seul,10 días</h3>
+                        </span>
+                    </div>
+                    <div class="paquete_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <div class="paquete_card_ubicacion"><i class="fa-solid fa-location-dot" style="color: #a364b4;"></i>
+                        LoL Park, Sinchon, Hongdae
+                    </div><!--.paquete_card_body-->
+
+                    <!-- Footer tarjeta paquete -->
+                    <div class="paquete_card_footer">
+                        <div class="btn_paquete_card_1">
+                            <a href="info_ruta_gamer.html"><button>Más info</button></a>
+                        </div>
+                        <div class="btn_paquete_card_2">
+                            <a href="form_presupuesto.html">
+                                <button>Pedir presupuesto</button></a>
+                        </div>
+                    </div>
+                </div><!--.paquete_card_footer-->
+            </a>
+        </section>
+    </article><!--paquete_movil-->
+
+
+    <!-- Sección del asistente escritorio/tablet-->
+    <section class="container_asistente col-12">
+        <article class="asistente col-9">
+
+            <div class="asistente_1 col-6">
+                <img src="assets/img/icono_asistente.png" alt="icono asistente virtual">
+                <div class="asistente_items_1">
+                    <h4>Agente K-Travel ¡Compra con atención personalizada!</h4>
+                    <p>Nuestros expertos te pueden asesorar para que planifiques tu viaje de la mejor forma</p>
+                </div>
+            </div>
+            <div class="asistente_2 col-3">
+                <a href="canales_atencion.html"><button>Pedir asesoría</button></a>
+            </div>
+        </article>
+    </section><!--container_asistente-->
+
+    <!-- sección del asisitente movil -->
+    <section class="asistente_movil col-12">
+        <article class="asistente col-9">
+
+            <div class="asistente_1 col-6">
+                <img src="assets/img/icono_asistente.png" alt="icono asistente virtual">
+                
+            </div>
+            <div class="asistente_2 col-6">
+                <a href="canales_atencion.html"><button>Pedir asesoría</button></a>
+            </div><!--asistente-->
+        </article>
+    </section><!--asistente_movil-->
+    <!-- Sección opiniones de usuarios y blog -->
+    <div class="opinion_blog_titulo col-12">
+        <h2>Las aventuras de los que han viajado a Corea con nosotros</h2>
+    </div><!--opinion_blog_titulo-->
+    <article class="opinion_blog container">
+        <!-- Card opinión de usuario -->
+
+        <section class="opinion_card col-3">
+            <a href="opinion_usuario.html">
+                <!-- Header tarjeta paquete -->
+                <div class="opinion_card_header">
+                    <img src="assets/img/opinion1.png" alt="">
+                    <p>Francisco y Lorena</p>
+                </div><!--.opinion_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="opinion_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <i class="fa-solid fa-star fa-xs" style="color: #c69cc8;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #c69cc8;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #c69cc8;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #c69cc8;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #c69cc8;"></i>
+                        </span>
+                        <span>
+                            <h4>Experiencia inolvidable</h4>
+                        </span>
+                    </div><!--paquete_card-->
+                    <div class="opinion_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <!-- Footer -->
+                    <div class="opinion_card_footer">
+                        <i class="fa-solid fa-suitcase fa-xl opinion_footer_icon" style="color: #d850bf;"></i>
+                        <p>Luna de K-Miel</p>
+                    </div>
+            </a>
+
+        </section>
+
+        <!-- Card opinión de usuario -->
+        <section class="opinion_card col-3">
+            <a href="opinion_usuario.html">
+                <!-- Header tarjeta paquete -->
+                <div class="opinion_card_header">
+                    <img src="assets/img/opinion2.png" alt="">
+                    <p>Ignacio Lampert</p>
+                </div><!--.paquete_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="opinion_card_body">
+                    <div class="paquete_card_body_titulo">
+                        <span>
+                            <i class="fa-solid fa-star fa-xs" style="color: #c69cc8;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #c69cc8;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #c69cc8;"></i>
+                            <i class="fa-solid fa-star fa-xs" style="color: #c69cc8;"></i>
+                            <i class="fa-regular fa-star-half-stroke fa-xs" style="color: #c69cc8;"></i>
+                        </span>
+                        <span>
+                            <h4>La mejor ruta de comida</h4>
+                        </span>
+                    </div>
+                    <div class="opinion_card_detalle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Culpa earum autem harum
+                        accusantium illo
+                        vero quos expedita. Accusantium, vel magnam
+                    </div>
+                    <!-- Footer -->
+                    <div class="opinion_card_footer">
+                        <i class="fa-solid fa-suitcase fa-xl opinion_footer_icon" style="color: #d850bf;"></i>
+                        <p>Ruta Mercados</p>
+                    </div>
+            </a>
+
+        </section><!--.opinion_card_body-->
+
+        <!-- Card opinión de usuario -->
+        <section class="blog_card col-6">
+            <a href="blog.html">
+                <!-- Header tarjeta paquete -->
+                <div class="blog_card_header">
+                    <h3>Las actividades en Corea que no te puedes perder</h3>
+                    <div class="img_blog">
+                        <img src="assets/img/blog.png" alt="">
+                    </div>
+                </div><!--.blog_card_header-->
+
+                <!-- Body tarjeta -->
+                <div class="blog_card_body">
+
+                    <div class="blog_card_detalle">
+                        Clases de K-pop, conciertos y un recorrido por los lugares donde se han filmado los videos de
+                        los grupos K-Pop, más reconocidos del mundo...
+                    </div>
+                    <!-- Footer -->
+                    <div class="blog_card_footer">
+                        <a href="kpop_blog.html">
+                            <i class="fa-solid fa-plus fa-xl opinion_footer_icon" style="color: #d850bf;"></i>
+                        </a>
+                    </div>
+            </a>
+
+        </section><!--.opinion_card_body-->
+    </article><!--opinion_blog-->
+
+    <!-- Sección condiciones de viaje escritorio-->
+    <div class="condiciones_titulo col-12">
+        <h2> ¿Por qué viajar con K-Travel?</h2>
+    </div>
+    <article class="condiciones">
+        <!-- Tarjeta condiciones 1-->
+        <section class="condiciones_card col-6">
+
+            <!-- Header tarjeta paquete -->
+            <div class="condiciones_card_header">
+                <span>
+                    <h3>Atención personalizada</h3>
+                </span>
+            </div><!--.condiciones_card_header-->
+
+            <!-- Body tarjeta -->
+            <div class="condiciones_card_body">
+                <p>Queremos construir tu <em>viaje soñado</em>, es por eso que en K-TRAVEL contamos con varios <a
+                        href="#">canales de atención</a> para que el viaje que tanto deseas se materialice. Te ayudamos
+                    a planificar tus vacaciones
+                    con nuestros <em>expertos en viajes</em>, puedes <a href="#">agendar una videollamada</a> o
+                    contactar con un <a href="#">agente en vivo.</a>
+                    También puedes realizar una consulta al <a href="#">WhatsApp</a> o visitar la <a
+                        href="#">sucursal</a> de K-TRAVEl en Santiago de Chile.</p>
+
+            </div><!--.condiciones_card_body-->
+
+            <!-- Footer tarjeta paquete -->
+            <div class="condiciones_card_footer">
+
+
+            </div><!--.condiciones_card_footer-->
+            </a>
+        </section>
+
+        <section class="condiciones_card col-6">
+
+            <!-- Header tarjeta paquete -->
+            <div class="condiciones_card_header">
+                <span>
+                    <h3>Soporte en todo momento</h3>
+                </span>
+            </div><!--.condiciones_card_header-->
+
+            <!-- Body tarjeta -->
+            <div class="condiciones_card_body">
+                <p>Somos más que una agencia de viajes, por eso en K-TRAVEL te ofrecemos la atención de nuestros
+                    profesionales expertos en viajes, antes, durante y después de tus vacaciones. También puedes
+                    instalar nuestra <a href="#">aplicación</a> disponible en Android y IOS, la cual tiene varias
+                    funciones que te van a ayudar en todas las etapas de tu <em>viaje</em> y obtendrás descuentos
+                    exclusivos. Por último, puedes realizar gestiones de cualquiera de tus reservas de forma online en
+                    <a href="#">Mi Cuenta.</a>
+                </p>
+
+            </div><!--.condiciones_card_body-->
+
+            <!-- Footer tarjeta paquete -->
+            <div class="condiciones_card_footer">
+
+
+            </div><!--.condiciones_card_footer-->
+            </a>
+        </section>
+
+
+
+    </article>
+
+        <!-- Sección condiciones de viaje movil-->
+        <div class="condiciones_titulo_tablet col-12">
+            <h2> ¿Por qué viajar con K-Travel?</h2>
+        </div>
+        <article class="condiciones_tablet">
+            <!-- Tarjeta condiciones 1-->
+            <section class="condiciones_card col-4">
+    
+                <!-- Header tarjeta paquete -->
+                <div class="condiciones_card_header">
+                    <span>
+                        <h3>Atención personalizada</h3>
+                    </span>
+                </div><!--.condiciones_card_header-->
+    
+                <!-- Body tarjeta -->
+                <div class="condiciones_card_body">
+                    <p>Queremos construir tu <em>viaje soñado</em>, es por eso que en K-TRAVEL contamos con varios <a
+                            href="#">canales de atención</a> para que el viaje que tanto deseas se materialice. Te ayudamos
+                        a planificar tus vacaciones
+                        con nuestros <em>expertos en viajes</em>, puedes <a href="#">agendar una videollamada</a> o
+                        contactar con un <a href="#">agente en vivo.</a>
+                        También puedes realizar una consulta al <a href="#">WhatsApp</a> o visitar la <a
+                            href="#">sucursal</a> de K-TRAVEl en Santiago de Chile.</p>
+    
+                </div><!--.condiciones_card_body-->
+    
+                <!-- Footer tarjeta paquete -->
+                <div class="condiciones_card_footer">
+    
+    
+                </div><!--.condiciones_card_footer-->
+                </a>
+            </section>
+    
+            <section class="condiciones_card col-4">
+    
+                <!-- Header tarjeta paquete -->
+                <div class="condiciones_card_header">
+                    <span>
+                        <h3>Soporte en todo momento</h3>
+                    </span>
+                </div><!--.condiciones_card_header-->
+    
+                <!-- Body tarjeta -->
+                <div class="condiciones_card_body">
+                    <p>Somos más que una agencia de viajes, por eso en K-TRAVEL te ofrecemos la atención de nuestros
+                        profesionales expertos en viajes, antes, durante y después de tus vacaciones. También puedes
+                        instalar nuestra <a href="#">aplicación</a> disponible en Android y IOS, la cual tiene varias
+                        funciones que te van a ayudar en todas las etapas de tu <em>viaje</em> y obtendrás descuentos
+                        exclusivos. Por último, puedes realizar gestiones de cualquiera de tus reservas de forma online en
+                        <a href="#">Mi Cuenta.</a>
+                    </p>
+    
+                </div><!--.condiciones_card_body-->
+    
+                <!-- Footer tarjeta paquete -->
+                <div class="condiciones_card_footer">
+    
+    
+                </div><!--.condiciones_card_footer-->
+                </a>
+            </section>
+    
+        </article>
+
+    <!-- Seccion footer -->
+    <footer class="footer_up">
+        <div class="logo_footer col-2">
+            <img src="assets/img/LOGO K-TRAVEL.png" alt="logo K-Travel">
+        </div>
+        <div class="footer_1 col-4">
+
+            <div class="somos_text">
+                <h4>Somos un aliado para tu viajes</h4>
+                <p>En K-Travel estamos especializados en viajes a Corea. Podemos ofrecerte un precio excepcional gracias
+                    a que organizamos tu viaje directamente con nuestros proveedores en destino, sin intermediarios.</p>
+            </div>
+
+        </div>
+        <div class="footer_2 col-4">
+            <h4>Viaja con nosotros</h4>
+            <ul>
+                <li><a href="somos.html"> Somos K-TRAVEL</a></li>
+                <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                <li><a href="derechos.html">Derechos y obligaciones del pasajero</a>
+                <li>
+            </ul>
+        </div>
+        <div class="footer_3 col-4">
+            <div>
+                <h4>¡Siguenos!</h4>
+                <a href="#">
+                    <i class="fa-brands fa-instagram fa-xl" style="color: #d850bf"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok fa-xl" style="color: #d850bf;"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube fa-xl" style="color: #d850bf;"></i>
+                </a>
+                <a href="#"><a href="#"></a>
+                    <i class="fa-brands fa-twitter fa-xl" style="color: #d850bf;"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer_bottom">
+        <div class="policy_box col-12">
+            <a href="contratacion.html">Condiciones de contratación</a>|
+            <a href="cookies.html">Política de cookies</a>|
+            <a href="privacidad.html">Politica de privacidad</a>
+        </div>
+        <div class="legal col-12">
+            <p>&copy; Paloma Rivera - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+    <!-- Seccion footer Movil-->
+    <footer class="footer_up_movil">
+        <div class="logo_footer col-2">
+            <img src="assets/img/LOGO K-TRAVEL.png" alt="logo K-Travel">
+        </div>
+        
+
+        </div>
+        <div class="footer_2 col-43">
+            <h4>Viaja con nosotros</h4>
+            
+        </div>
+        <div class="footer_3 col-5">
+            <div>
+                <h4>¡Siguenos!</h4>
+                <a href="#">
+                    <i class="fa-brands fa-instagram fa-xl" style="color: #d850bf"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok fa-xl" style="color: #d850bf;"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube fa-xl" style="color: #d850bf;"></i>
+                </a>
+                <a href="#"><a href="#"></a>
+                    <i class="fa-brands fa-twitter fa-xl" style="color: #d850bf;"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer_bottom_movil">
+        <div class="policy_box col-12">
+            <a href="contratacion.html">Condiciones de contratación</a>|
+            <a href="cookies.html">Política de cookies</a>|
+            <a href="privacidad.html">Politica de privacidad</a>
+        </div>
+        <div class="legal_movil col-12">
+            <p>&copy; Paloma Rivera - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Derechos reservados /copyright -->
+
+    <!-- Scrip iconos -->
+
+    <script src="https://kit.fontawesome.com/837b8a669c.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
